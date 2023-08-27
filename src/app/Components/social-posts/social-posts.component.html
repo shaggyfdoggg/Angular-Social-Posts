@@ -1,0 +1,5 @@
+<!-- parent -->
+<p>Add your thoughts here:</p>
+<app-post-form (PostCreated)="AddPost($event)"></app-post-form>
+<p>User thoughts:</p>
+<app-single-post *ngFor="let p of listPosts" [post]="p"></app-single-post>

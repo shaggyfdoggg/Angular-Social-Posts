@@ -1,0 +1,6 @@
+<button (click)="toggleDisplay()">Display</button>
+<form (ngSubmit)="submitPost()" *ngIf="display">
+    <input type="text" placeholder="Title" [(ngModel)]="newPost.title" name="Title">
+    <input type="text" placeholder="Thought" [(ngModel)]="newPost.thought" name="Thought">
+    <button type="submit">add new post</button>
+</form>
